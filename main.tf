@@ -94,3 +94,5 @@
 
 provider "null" {}
 provider "template" {}
+# keep this for backwards compatibility -- i.e., people upgrading from 1.3.0
+provider "http" {}
