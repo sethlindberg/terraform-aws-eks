@@ -24,6 +24,11 @@ output "cluster_version" {
   value       = "${aws_eks_cluster.this.version}"
 }
 
+output "cluster_role_arn" {
+  description = "The role ARN for the EKS cluster, to help attach trust policies to."
+  value       = "${aws_eks_cluster.this.role_arn}"
+}
+
 output "cluster_security_group_id" {
   description = "Security group ID attached to the EKS cluster."
   value       = "${local.cluster_security_group_id}"
